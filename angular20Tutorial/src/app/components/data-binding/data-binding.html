@@ -17,4 +17,24 @@
       <p [class]="myClassName">This is samplee para</p>
     </td>
   </tr>
+  <tr>
+    <td>
+      <button (click)="showWelcomeMessage()">Show Message</button>
+    </td>
+    <td>
+      <button (click)="changeCourseName()">change course name</button>
+    </td>
+    <td>
+      <select (change)="onCityChange()">
+        <option value="">Pune</option>
+        <option value="">Nagpur</option>
+        <option value="">Mumbai</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <input type="text" [(ngModel)]="courseName"/>
+    </td>
+  </tr>
 </table>

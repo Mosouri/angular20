@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-data-binding',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './data-binding.html',
   styleUrl: './data-binding.css',
 })
@@ -15,4 +16,14 @@ export class DataBinding {
   myClassName: string = 'myColor';
 
   constructor() {}
+
+  showWelcomeMessage(){
+    alert("Welcome to Angular 20")
+  }
+  changeCourseName(){
+    this.courseName = "Reactjs Tutorial"
+  }
+  onCityChange(){
+    alert("city changed")
+  }
 }
